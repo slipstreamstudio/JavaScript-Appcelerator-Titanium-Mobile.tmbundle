@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+killall "iPhone Simulator"
+sleep 1
+THETARGET=$("$TM_BUNDLE_SUPPORT/lib/target.php")
+"/Library/Application Support/Titanium/mobilesdk/osx/1.6.2/iphone/builder.py" "simulator" "4.3" "/Users/mitch/src/$THETARGET" "com.dxmheavy.$THETARGET" "$THETARGET" "iphone"  &amp;&gt;/dev/null &amp;</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Stop &amp; Launch iPhone Emulator</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.js.ti</string>
+	<key>uuid</key>
+	<string>0ED6A340-FC47-4493-9C24-D420A93C1F41</string>
+</dict>
+</plist>
