@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var ${1:win} = Ti.UI.createWindow({
+    ${2:backgroundColor: "#${3:ccc}",}
+    ${4:fullscreen: true,}
+    ${5:modal: true,}
+    ${6:url: "${7:url}"}
+});
+$0
+</string>
+	<key>name</key>
+	<string>Ti.UI.createWindow</string>
+	<key>scope</key>
+	<string>source.js.ti</string>
+	<key>tabTrigger</key>
+	<string>win</string>
+	<key>uuid</key>
+	<string>5ABEFF08-F96F-4BB4-9F25-360932FFE4C6</string>
+</dict>
+</plist>

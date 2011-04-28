@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var ${1:labelName} = Titanium.UI.createLabel({
+    text:'${2:text}',
+    font:{fontSize:${3:11}},
+    color:'#444',
+    ${4:top:130,}
+    ${5:left:10,}
+    height:${6:'auto'},
+    width:${7:'auto'}
+});
+</string>
+	<key>name</key>
+	<string>TI.UI.createLabel</string>
+	<key>scope</key>
+	<string>source.js.ti</string>
+	<key>tabTrigger</key>
+	<string>label</string>
+	<key>uuid</key>
+	<string>C0D163C1-2800-4101-BFC4-F9BD4712B29E</string>
+</dict>
+</plist>
