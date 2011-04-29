@@ -12,13 +12,11 @@
 			<string>88506B58-5A8F-4009-8F5A-AC39182378EB</string>
 			<string>E910E64B-7423-4B47-8F18-1847D4DEE85B</string>
 			<string>602D47B3-1101-483B-A11E-86550C77E229</string>
-			<string>1BE04E27-BDCF-4B7D-B7A5-479D0478689F</string>
-			<string>24CE4EC5-A5E7-4779-BABB-7C433746D6A1</string>
-			<string>72501E12-8711-4DB8-B04C-349D2675F5E6</string>
 			<string>A64DAC04-44C8-460A-AB37-4E59D72CC93E</string>
 			<string>C1B975FE-E24C-481D-B032-8784FBC75658</string>
 			<string>0D82570E-96A6-4C42-9CC2-52A166728507</string>
 			<string>0ED6A340-FC47-4493-9C24-D420A93C1F41</string>
+			<string>97CDEC05-48E6-4321-9F39-CF01CE88D290</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -31,6 +29,18 @@
 				</array>
 				<key>name</key>
 				<string>Ti.UI</string>
+			</dict>
+			<key>97CDEC05-48E6-4321-9F39-CF01CE88D290</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>72501E12-8711-4DB8-B04C-349D2675F5E6</string>
+					<string>1BE04E27-BDCF-4B7D-B7A5-479D0478689F</string>
+					<string>24CE4EC5-A5E7-4779-BABB-7C433746D6A1</string>
+					<string>F877C7F8-ACD0-45A7-8E8C-62867C720E7A</string>
+				</array>
+				<key>name</key>
+				<string>Logging</string>
 			</dict>
 		</dict>
 	</dict>
@@ -47,6 +57,7 @@
 		<string>602D47B3-1101-483B-A11E-86550C77E229</string>
 		<string>1BE04E27-BDCF-4B7D-B7A5-479D0478689F</string>
 		<string>24CE4EC5-A5E7-4779-BABB-7C433746D6A1</string>
+		<string>F877C7F8-ACD0-45A7-8E8C-62867C720E7A</string>
 		<string>72501E12-8711-4DB8-B04C-349D2675F5E6</string>
 		<string>A64DAC04-44C8-460A-AB37-4E59D72CC93E</string>
 		<string>C1B975FE-E24C-481D-B032-8784FBC75658</string>
@@ -54,6 +65,7 @@
 		<string>C0D163C1-2800-4101-BFC4-F9BD4712B29E</string>
 		<string>0D82570E-96A6-4C42-9CC2-52A166728507</string>
 		<string>0ED6A340-FC47-4493-9C24-D420A93C1F41</string>
+		<string>EBD01A04-B675-4ACB-9099-22ED8A207132</string>
 	</array>
 	<key>uuid</key>
 	<string>3F2569A1-DA0B-43CC-B968-A402EC3C1079</string>

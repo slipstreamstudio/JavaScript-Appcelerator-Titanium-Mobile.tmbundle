@@ -9,7 +9,9 @@
 killall "iPhone Simulator"
 sleep 1
 THETARGET=$("$TM_BUNDLE_SUPPORT/lib/target.php")
-"/Library/Application Support/Titanium/mobilesdk/osx/1.6.2/iphone/builder.py" "simulator" "4.3" "/Users/mitch/src/$THETARGET" "com.dxmheavy.$THETARGET" "$THETARGET" "iphone"  &amp;&gt;/dev/null &amp;</string>
+PNAME=$(head -n1 &lt;&lt;&lt;"$THETARGET")
+PDIR=$(tail -n1 &lt;&lt;&lt;"$THETARGET")
+"/Library/Application Support/Titanium/mobilesdk/osx/1.6.2/iphone/builder.py" "simulator" "4.3" "$PDIR" "com.dxmheavy.$PNAME" "$PNAME" "iphone" &amp;&gt;/dev/null &amp;</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>

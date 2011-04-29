@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+THETARGET=$("$TM_BUNDLE_SUPPORT/lib/testreturn.php")
+PNAME=$(head -n1 &lt;&lt;&lt;"$THETARGET")
+PDIR=$(tail -n1 &lt;&lt;&lt;"$THETARGET")</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^@</string>
+	<key>name</key>
+	<string>Test Return Values</string>
+	<key>output</key>
+	<string>openAsNewDocument</string>
+	<key>uuid</key>
+	<string>EBD01A04-B675-4ACB-9099-22ED8A207132</string>
+</dict>
+</plist>
