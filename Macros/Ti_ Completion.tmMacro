@@ -37,8 +37,6 @@ TextMate::Complete.new.complete!
 			<string>executeCommandWithOptions:</string>
 		</dict>
 	</array>
-	<key>keyEquivalent</key>
-	<string>.</string>
 	<key>name</key>
 	<string>Ti. Completion</string>
 	<key>scope</key>
