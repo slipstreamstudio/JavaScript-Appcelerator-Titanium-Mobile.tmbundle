@@ -13,8 +13,13 @@ if('Resources' == $projectName) {
 }
 $projectDirectory = '/'.implode('/', $pdPieces);
 
+$xml = simplexml_load_file($projectDirectory.'/tiapp.xml');
+
+$projectId = $xml->id;
+
 $out = <<< OUTPUT
 $projectName
 $projectDirectory
+$projectId
 OUTPUT;
 print $out;?>

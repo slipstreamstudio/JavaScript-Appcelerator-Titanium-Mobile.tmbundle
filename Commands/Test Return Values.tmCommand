@@ -8,7 +8,11 @@
 	<string>#!/usr/bin/env bash
 THETARGET=$("$TM_BUNDLE_SUPPORT/lib/testreturn.php")
 PNAME=$(head -n1 &lt;&lt;&lt;"$THETARGET")
-PDIR=$(tail -n1 &lt;&lt;&lt;"$THETARGET")</string>
+
+PDIRANDID=$(tail -n2 &lt;&lt;&lt;"$THETARGET")
+PDIR=$(head -n1 &lt;&lt;&lt;"$PDIRANDID")
+PID=$(tail -n1 &lt;&lt;&lt;"$PDIRANDID")
+echo $PID</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
@@ -16,7 +20,7 @@ PDIR=$(tail -n1 &lt;&lt;&lt;"$THETARGET")</string>
 	<key>name</key>
 	<string>Test Return Values</string>
 	<key>output</key>
-	<string>openAsNewDocument</string>
+	<string>showAsHTML</string>
 	<key>uuid</key>
 	<string>EBD01A04-B675-4ACB-9099-22ED8A207132</string>
 </dict>
