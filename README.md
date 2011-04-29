@@ -1,6 +1,8 @@
 Appcelerator Titanium Mobile JavaScript TextMate Bundle
 ====
-By [Thomas Aylott](http://SubtleGradient.com)
+Fork by [Mitchell Amihod](http://mitchell.amihod.com)
+
+Originally By [Thomas Aylott](http://SubtleGradient.com)
 
 *MIT License*
 
@@ -8,7 +10,7 @@ How to install
 ----
 
 0. Install TextMate (um… duh?)
-1. Download [JavaScript-Appcelerator-Titanium-Mobile.tmbundle.zip](http://github.com/subtleGradient/JavaScript-Appcelerator-Titanium-Mobile.tmbundle/zipball/master)
+1. Download [JavaScript-Appcelerator-Titanium-Mobile.tmbundle.zip](http://github.com/meeech/JavaScript-Appcelerator-Titanium-Mobile.tmbundle/zipball/master)
 2. Unzip
 3. Rename the folder to `ti-mo.tmbundle`
     * The name of the folder doesn't really matter, just so long as it has the `tmbundle` extension
@@ -26,6 +28,9 @@ The completion list contains all of the `Titanium` and `Ti` API.
 
 ### Tooltips! ⌥F1 
 The tips are context sensitive. Place your caret anywhere inside of a function (on the same line) and it'll work, even inside the arguments `()`!
+
+### Stop & Launch Emulator  ⌘R
+Will stop the emulator (if it's running) and launch the project in the emulator.
 
 ### Complete! Type `Ti.` (optional)
 *Enable this by selecting the "JavaScript Titanium Mobile" language in the bottom bar of TextMate.*
