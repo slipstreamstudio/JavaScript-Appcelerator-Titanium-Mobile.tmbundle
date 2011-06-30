@@ -14,11 +14,9 @@ PDIRANDID=$(tail -n2 &lt;&lt;&lt;"$THETARGET")
 PDIR=$(head -n1 &lt;&lt;&lt;"$PDIRANDID")
 PID=$(tail -n1 &lt;&lt;&lt;"$PDIRANDID")
 
-"/Library/Application Support/Titanium/mobilesdk/osx/1.6.2/iphone/builder.py" "simulator" "4.3" "$PDIR" "$PID" "$PNAME" "iphone" &amp;&gt;/dev/null &amp;</string>
+"/Library/Application Support/Titanium/mobilesdk/osx/1.7.0/iphone/builder.py" "simulator" "4.3" "$PDIR" "$PID" "$PNAME" "iphone" &amp;&gt;/dev/null &amp;</string>
 	<key>input</key>
 	<string>none</string>
-	<key>keyEquivalent</key>
-	<string>@r</string>
 	<key>name</key>
 	<string>Stop &amp; Launch iPhone Emulator</string>
 	<key>output</key>

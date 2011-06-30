@@ -5,8 +5,11 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>osascript -e 'tell the application "Xcode" to debug' &amp;&gt;/dev/null &amp;
-</string>
+    <string>osascript -e 'application "iPhone Simulator" quit' &amp;&gt;/dev/null &amp;
+osascript -e 'tell the application "Xcode" to debug' &amp;&gt;/dev/null &amp;
+    </string>
+    <key>keyEquivalent</key>
+	<string>@r</string>
 	<key>input</key>
 	<string>none</string>
 	<key>name</key>
