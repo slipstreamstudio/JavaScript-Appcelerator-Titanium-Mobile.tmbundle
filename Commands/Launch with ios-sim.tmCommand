@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env python
+
+'''
+dependent to ios-sim command (https://github.com/Fingertips/ios-sim)
+brew install ios-sim
+'''
+
+import os
+
+def search_parent(path, target, count):
+    if target in os.listdir(path):
+        return path
+    else:
+        if count &lt; 0: return None
+        path = os.path.abspath(os.path.join(path, '..'))
+        return search_parent(path, target, count - 1)
+        
+ti_app_base_path = search_parent('.', 'tiapp.xml', 10)
+
+for i in ['Release', 'Debug']:
+    p = os.path.join(ti_app_base_path, 'build/iphone/build', i + '-iphonesimulator')
+    if os.path.exists(p):
+        l = [x for x in os.listdir(p) if x.endswith('.app')]
+        if len(l) &gt; 0:
+            app_path = os.path.join(p, l[0])
+        else:
+            app_path = None
+
+if app_path:
+    
+    os.system('echo "" &gt; /tmp/ios-sim.log')
+    cmd = 'ios-sim launch %s --stdout /tmp/ios-sim.log --stderr /tmp/ios-sim.log  &amp;&gt;/dev/null &amp;' % (app_path)
+    os.system(cmd)
+    # os.system('tail -f /tmp/ios-sim.log')
+
+else:
+    print 'app not found'
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Launch with ios-sim</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.js.ti</string>
+	<key>uuid</key>
+	<string>58FFDDD1-EA78-4ED2-9369-0DFD2400A27D</string>
+</dict>
+</plist>
